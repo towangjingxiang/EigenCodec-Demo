@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EigenCodec Audio Samples</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px auto; max-width: 1000px; line-height: 1.6; color: #333; }
+        h1 { color: #2c3e50; text-align: center; }
+        p.desc { text-align: center; font-size: 1.1em; margin-bottom: 30px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 50px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #ddd; padding: 15px; text-align: center; vertical-align: middle; }
+        th { background-color: #f8f9fa; font-weight: bold; color: #2c3e50; }
+        tr:nth-child(even) { background-color: #fdfdfd; }
+        audio { height: 40px; outline: none; }
+        .highlight { background-color: #e8f4f8; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>EigenCodec: Ultra-Low Bitrate Narrowband Speech Coding</h1>
+    <p class="desc">This page provides supplementary audio samples for our submitted manuscript to JASA.</p>
+
+    <div style="background-color: #f8f9fa; padding: 15px; border-left: 5px solid #3498db; margin-bottom: 30px;">
+        <strong>Fairness Protocol:</strong> All end-to-end neural baselines (EnCodec, HiFi-Codec, MSCACodec, DAC, HILCodec) were explicitly <strong>retrained from scratch</strong> on the 8 kHz LibriSpeech dataset and constrained to an identical bottleneck (25 Hz frame rate × 4 codebooks) to ensure a strictly fair comparison.
+    </div>
+
+    <!-- Sample 1 -->
+    <h2>Sample 1: From <code>test-clean</code> (High-quality condition)</h2>
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Bitrate</th>
+            <th>Audio Sample</th>
+        </tr>
+        <tr><td>Ground Truth (Original)</td><td>Uncompressed</td><td><audio controls src="audio/Original-clean.wav"></audio></td></tr>
+        <tr><td>Codec2 (Parametric)</td><td>1.2 kbps</td><td><audio controls src="audio/Codec2-1.2-clean.wav"></audio></td></tr>
+        <tr><td>Codec2 (Parametric)</td><td>2.4 kbps</td><td><audio controls src="audio/Codec2-2.4-clean.wav"></audio></td></tr>
+        <tr><td>Lyra-V2 (Generative)</td><td>3.2 kbps</td><td><audio controls src="audio/Lyra-V2-3.2-clean.wav"></audio></td></tr>
+        <tr><td>EnCodec (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/Encodec-0.8-clean.wav"></audio></td></tr>
+        <tr><td>HiFi-Codec (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/HiFiCodec-0.8-clean.wav"></audio></td></tr>
+        <tr><td>MSCACodec (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/MSCACodec-0.8-clean.wav"></audio></td></tr>
+        <tr><td>DAC (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/DAC-0.8-clean.wav"></audio></td></tr>
+        <tr><td>DAC-s (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/DAC-s-0.8-clean.wav"></audio></td></tr>
+        <tr><td>HILCodec (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/HILCodec-0.8-clean.wav"></audio></td></tr>
+        <tr class="highlight"><td>EigenCodec (Ours)</td><td>0.8 kbps</td><td><audio controls src="audio/EigenCodec-0.8-clean.wav"></audio></td></tr>
+    </table>
+
+    <!-- Sample 2 -->
+    <h2>Sample 2: From <code>test-other</code> (Challenging acoustic condition)</h2>
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Bitrate</th>
+            <th>Audio Sample</th>
+        </tr>
+        <tr><td>Ground Truth (Original)</td><td>Uncompressed</td><td><audio controls src="audio/Original-other.wav"></audio></td></tr>
+        <tr><td>Codec2 (Parametric)</td><td>1.2 kbps</td><td><audio controls src="audio/Codec2-1.2-other.wav"></audio></td></tr>
+        <tr><td>Codec2 (Parametric)</td><td>2.4 kbps</td><td><audio controls src="audio/Codec2-2.4-other.wav"></audio></td></tr>
+        <tr><td>Lyra-V2 (Generative)</td><td>3.2 kbps</td><td><audio controls src="audio/Lyra-V2-3.2-other.wav"></audio></td></tr>
+        <tr><td>EnCodec (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/Encodec-0.8-other.wav"></audio></td></tr>
+        <tr><td>HiFi-Codec (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/HiFiCodec-0.8-other.wav"></audio></td></tr>
+        <tr><td>MSCACodec (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/MSCACodec-0.8-other.wav"></audio></td></tr>
+        <tr><td>DAC (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/DAC-0.8-other.wav"></audio></td></tr>
+        <tr><td>DAC-s (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/DAC-s-0.8-other.wav"></audio></td></tr>
+        <tr><td>HILCodec (Retrained)</td><td>0.8 kbps</td><td><audio controls src="audio/HILCodec-0.8-other.wav"></audio></td></tr>
+        <tr class="highlight"><td>EigenCodec (Ours)</td><td>0.8 kbps</td><td><audio controls src="audio/EigenCodec-0.8-other.wav"></audio></td></tr>
+    </table>
+
+    <p style="text-align: center; color: #7f8c8d; font-size: 0.9em; margin-top: 50px;">
+        <em>Note: The source code and pre-trained weights will be made publicly available upon the acceptance of the manuscript.</em>
+    </p>
+
+</body>
+</html>
