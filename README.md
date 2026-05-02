@@ -12,38 +12,72 @@ This page provides supplementary audio samples for our submitted manuscript to J
 
 ### Sample 1: From `test-clean` (High-quality recording condition)
 
-**1. Ground Truth (Original) | Uncompressed**  
-<audio controls src="audio/Original-clean.wav"></audio>
+**1. Ground Truth (Original) | Uncompressed**
 
-**2. Codec2 (Parametric) | 1.2 kbps**  
-<audio controls src="audio/Codec2-1.2-clean.wav"></audio>
+<audio controls>
+  <source src="audio/Original-clean.wav" type="audio/wav">
+</audio>
 
-**3. Codec2 (Parametric) | 2.4 kbps**  
-<audio controls src="audio/Codec2-2.4-clean.wav"></audio>
+**2. Codec2 (Parametric) | 1.2 kbps**
 
-**4. Lyra-V2 (Generative) | 3.2 kbps**  
-<audio controls src="audio/Lyra-V2-3.2-clean.wav"></audio>
+<audio controls>
+  <source src="audio/Codec2-1.2-clean.wav" type="audio/wav">
+</audio>
 
-**5. EnCodec (Retrained) | 0.8 kbps**  
-<audio controls src="audio/Encodec-0.8-clean.wav"></audio>
+**3. Codec2 (Parametric) | 2.4 kbps**
 
-**6. HiFi-Codec (Retrained) | 0.8 kbps**  
-<audio controls src="audio/HiFiCodec-0.8-clean.wav"></audio>
+<audio controls>
+  <source src="audio/Codec2-2.4-clean.wav" type="audio/wav">
+</audio>
 
-**7. MSCACodec (Retrained) | 0.8 kbps**  
-<audio controls src="audio/MSCACodec-0.8-clean.wav"></audio>
+**4. Lyra-V2 (Generative) | 3.2 kbps**
 
-**8. DAC (Retrained) | 0.8 kbps**  
-<audio controls src="audio/DAC-0.8-clean.wav"></audio>
+<audio controls>
+  <source src="audio/Lyra-V2-3.2-clean.wav" type="audio/wav">
+</audio>
 
-**9. DAC-s (Retrained) | 0.8 kbps**  
-<audio controls src="audio/DAC-s-0.8-clean.wav"></audio>
+**5. EnCodec (Retrained) | 0.8 kbps**
 
-**10. HILCodec (Retrained) | 0.8 kbps**  
-<audio controls src="audio/HILCodec-0.8-clean.wav"></audio>
+<audio controls>
+  <source src="audio/Encodec-0.8-clean.wav" type="audio/wav">
+</audio>
 
-**11. EigenCodec (Ours) | 0.8 kbps**  
-<audio controls src="audio/EigenCodec-0.8-clean.wav"></audio>
+**6. HiFi-Codec (Retrained) | 0.8 kbps**
+
+<audio controls>
+  <source src="audio/HiFiCodec-0.8-clean.wav" type="audio/wav">
+</audio>
+
+**7. MSCACodec (Retrained) | 0.8 kbps**
+
+<audio controls>
+  <source src="audio/MSCACodec-0.8-clean.wav" type="audio/wav">
+</audio>
+
+**8. DAC (Retrained) | 0.8 kbps**
+
+<audio controls>
+  <source src="audio/DAC-0.8-clean.wav" type="audio/wav">
+</audio>
+
+**9. DAC-s (Retrained) | 0.8 kbps**
+
+<audio controls>
+  <source src="audio/DAC-s-0.8-clean.wav" type="audio/wav">
+</audio>
+
+**10. HILCodec (Retrained) | 0.8 kbps**
+
+<audio controls>
+  <source src="audio/HILCodec-0.8-clean.wav" type="audio/wav">
+</audio>
+
+**11. EigenCodec (Ours) | 0.8 kbps**
+
+<audio controls>
+  <source src="audio/EigenCodec-0.8-clean.wav" type="audio/wav">
+</audio>
+
 
 ---
 <br>
